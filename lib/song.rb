@@ -44,7 +44,10 @@ class Song
     song_file = filename.split(/.mp3| - /)
     artist_name = song[0]
     name = song[1]
-    
+    song = self.new
+    song.name = name
+    song.artist_name = artist_name
+    song
   end
  
  
